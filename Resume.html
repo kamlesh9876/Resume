@@ -1,156 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Kamlesh Pawar - Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;600&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Lora', serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
             background-color: #f4f4f4;
+            color: #333;
+            animation: fadeIn 1.5s ease-out;
         }
+
         .container {
-            width: 80%;
-            max-width: 900px;
+            width: 85%;
+            max-width: 1000px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 40px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease-out;
         }
+
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
         }
+
         .header h1 {
             font-family: 'Poppins', sans-serif;
-            font-size: 36px;
-            margin: 0;
+            font-size: 38px;
             color: #2c3e50;
+            margin-bottom: 5px;
         }
+
         .header h2 {
             font-family: 'Poppins', sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 300;
             color: #7f8c8d;
-            margin: 5px 0 0;
         }
+
         .content {
             display: flex;
-            text-align: justify;
             justify-content: space-between;
             flex-wrap: wrap;
+            gap: 20px;
+            animation: fadeInUp 1.5s ease-out;
         }
-        .left-column, .right-column {
+
+        .left-column,
+        .right-column {
             width: 48%;
-            margin-bottom: 20px;
+            animation: slideInLeft 1s ease-out;
         }
+
         .section {
-            margin-bottom: 20px;
-            padding: 10px;
             background: #ecf0f1;
+            padding: 20px;
             border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
         }
+
         .section h3 {
             font-family: 'Poppins', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 10px;
             color: #2980b9;
+            text-transform: uppercase;
         }
+
+        .section p {
+            font-family: 'Lora', serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
         .contact-info a {
             color: #2980b9;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
+
         .contact-info a:hover {
+            color: #1abc9c;
             text-decoration: underline;
         }
+
         .contact-info i {
             margin-right: 10px;
         }
-        .skills, .education {
-            margin-top: 10px;
-        }
-        .education .major {
-            font-weight: bold;
-        }
-        .projects ul {
-            list-style-type: disc;
-            margin: 10px 0 0 20px;
-        }
+
         .footer {
             text-align: center;
-            margin-top: 20px;
             font-size: 14px;
             color: #7f8c8d;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .footer a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-            <h1>KAMLESH PAWAR</h1>
-            <h2>Aspiring Software Developer</h2>
+            <h1>Kamlesh Pawar</h1>
+            <h2>Aspiring Software Developer | Python, Web Development & AI Enthusiast</h2>
         </div>
         <div class="content">
             <div class="left-column">
                 <div class="section contact-info">
-                    <h3>CONTACT</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:kamleshsharadpawar@gmail.com">kamleshsharadpawar@gmail.com</a></p>
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> <a
+                            href="mailto:kamleshsharadpawar@gmail.com">kamleshsharadpawar@gmail.com</a></p>
                     <p><i class="fas fa-phone"></i> 9860369418 / 8010057203</p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kamlesh-pawar-3871552b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blof6xJ88ThiHwu0AhumbNw%3D%3D" target="_blank">Kamlesh Pawar</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/kamlesh9876" target="_blank">kamlesh9876</a></p>
-                </div>
-                <div class="section skills">
-                    <h3>SKILLS</h3>
-                    <p>Python, Java, JavaScript, HTML, CSS, MongoDB, VS Code (3 years experience)</p>
-                </div>
-                <div class="section education">
-                    <h3>EDUCATION</h3>
-                    <p class="major">Bachelor of Technology in Computer Science</p>
-                    <p>Ajeenkya DY Patil University<br>Currently pursuing</p>
-                </div>
-            </div>
-            <div class="right-column">
-                <div class="section about">
-                    <h3>ABOUT</h3>
-                    <p>I am a fresher currently studying at Ajeenkya DY Patil University in my 3rd year. I possess strong problem-solving skills and have created several websites, including a photo editing site named "Editoria" and web games like "Hell Game" and "Space Runner." Currently, I am working on a hospital management system in Python and have developed an AI voice assistant named "Jarvis 2.0." In the future, I plan to create an AI furniture system and an operating system. Additionally, I have published a review paper titled "Comparison of Past and Present Tradeoff and Opportunity Cost" and received a certificate for it. My goal is to start my career as a web developer, but my ultimate aim is to become a Python AIML developer or software developer.</p>
-                </div>
-                <div class="section work-experience">
-                    <h3>WORK EXPERIENCE</h3>
-                    <p>I am a fresher in the corporate world.</p>
-                </div>
-                <div class="section projects">
-                    <h3>PROJECTS</h3>
-                    <ul>
-                        <li>Editoria (Photo Editing Website)</li>
-                        <li>Hell Game (Web Game)</li>
-                        <li>Space Runner (Web Game)</li>
-                        <li>Hospital Management System (Python)</li>
-                        <li>Jarvis 2.0 (AI Voice Assistant)</li>
-                        <li>Sentiment Analysis Tool</li>
-                        <li>College Website (ADYPU WEB site)</li>
-                    </ul>
-                </div>
-                <div class="section certifications">
-                    <h3>CERTIFICATIONS</h3>
-                    <p>Certificate for the review paper titled "Comparison of Past and Present Tradeoff and Opportunity Cost."</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kamlesh-pawar-3871552b5"
+                            target="_blank">LinkedIn</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/kamlesh9876" target="_blank">GitHub</a>
+                    </p>
+                    <p><i class="fab fa-google"></i> <a
+                            href="https://developers.google.com/profile/u/103766921932269192918" target="_blank">Google
+                            Developer Profile</a></p>
+                    <p><i class="fab fa-microsoft"></i> <a href="https://learn.microsoft.com/en-us/users/me/"
+                            target="_blank">Microsoft Learn Profile</a></p>
                 </div>
 
+                <div class="section skills">
+                    <h3>Technical Skills</h3>
+                    <p><strong>Programming Languages:</strong> Python, Java, JavaScript</p>
+                    <p><strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js</p>
+                    <p><strong>Database Management:</strong> MongoDB</p>
+                    <p><strong>Tools & Frameworks:</strong> Git, Firebase, Flask, VS Code</p>
+                </div>
+
+                <div class="section education">
+                    <h3>Education</h3>
+                    <p><strong>Bachelor of Technology in Computer Science</strong><br> Ajeenkya DY Patil University,
+                        Pune (Currently Pursuing)</p>
+                </div>
+
+                <div class="section internship">
+                    <h3>Internship Experience</h3>
+                    <p><strong>IT Support Intern</strong> | XYZ Company | June 2024 - Present</p>
+                    <ul>
+                        <li>Assisted in maintaining IT infrastructure and troubleshooting hardware/software issues.</li>
+                        <li>Provided technical support for end-users and improved system performance.</li>
+                        <li>Created and documented troubleshooting procedures for common technical issues.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section about">
+                    <h3>About Me</h3>
+                    <p>I am a passionate software developer currently pursuing my B.Tech in Computer Science. With a
+                        strong foundation in problem-solving and coding, I am actively working on building innovative
+                        web applications, including a chat application using Firebase. I have developed several projects
+                        involving AI, web games, and web development. My primary goal is to work in the field of AI and
+                        Machine Learning, but I am also open to roles in full-stack development, especially with Python.
+                        I am driven by learning new technologies and continuously improving my skills.</p>
+                </div>
+
+                <div class="section work-experience">
+                    <h3>Professional Experience</h3>
+                    <p>I am a fresher with practical experience in IT support, web development, and AI-based projects.
+                        My internship in IT support has given me hands-on experience in troubleshooting and technical
+                        problem-solving. Currently, I am focused on building my projects and enhancing my skills in
+                        development technologies.</p>
+                </div>
+
+                <div class="section projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><strong>Editoria:</strong> A photo editing website developed with HTML, CSS, and JavaScript.
+                        </li>
+                        <li><strong>Hell Game:</strong> A web-based action game built with JavaScript.</li>
+                        <li><strong>Space Runner:</strong> A fast-paced web game developed using JavaScript.</li>
+                        <li><strong>Hospital Management System:</strong> A Python-based system for managing hospital
+                            data (currently under development).</li>
+                        <li><strong>Jarvis 2.0:</strong> An AI voice assistant built using Python and natural language
+                            processing (in progress).</li>
+                        <li><strong>Sentiment Analysis Tool:</strong> A Python-based tool to analyze sentiments from
+                            user reviews (ongoing).</li>
+                        <li><strong>AI Furniture System:</strong> Concept in development for an AI-based furniture
+                            system (future project).</li>
+                        <li><strong>Chat Application:</strong> A real-time chat app using Firebase, currently under
+                            development, focusing on user authentication, messaging, and real-time updates.</li>
+                    </ul>
+                </div>
+
+                <div class="section certifications">
+                    <h3>Certifications</h3>
+                    <p><strong>Certificate:</strong> Published a review paper titled "Comparison of Past and Present
+                        Tradeoff and Opportunity Cost" with recognition.</p>
+                    <p><strong>Latest Review Paper:</strong> Submitted a review paper on "AI-Based Streetlight Systems",
+                        focusing on optimizing energy usage and enhancing urban infrastructure through artificial
+                        intelligence.</p>
+                </div>
             </div>
         </div>
+
         <div class="footer">
-            <p>Thank you for considering my application!</p>
+            <p>Thank you for reviewing my resume. Feel free to <a href="mailto:kamleshsharadpawar@gmail.com">contact
+                    me</a> for further inquiries or collaborations.</p>
         </div>
     </div>
 </body>
+
 </html>
